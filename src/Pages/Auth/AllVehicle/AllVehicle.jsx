@@ -4,7 +4,7 @@ import Card from '../../../components/Card';
 
 const AllVehicle = () => {
     const data = useLoaderData()
-    console.log(data)
+    // console.log(data)
     return (
         <div>
             <div className="text-2xl text-center font-bold"> All Vehicle</div>

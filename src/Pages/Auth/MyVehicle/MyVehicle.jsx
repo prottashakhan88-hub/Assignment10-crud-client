@@ -9,7 +9,7 @@ const MyVehicle = () => {
       // const { id } = useParams();
     const {user} = use(AuthContext)
       const [vehicle, setVehicle] = useState([]);
-      console.log(vehicle)
+      // console.log(vehicle)
   const [loading, setLoading] = useState(true)
 
     useEffect(() => {
@@ -64,7 +64,7 @@ const MyVehicle = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            console.log(data);
+            // console.log(data);
               navigate("/all-vehicles");
              Swal.fire({
               title: "Deleted!",
@@ -73,7 +73,7 @@ const MyVehicle = () => {
             });
           })
           .catch((err) => {
-            console.log(err);
+            // console.log(err);
           });
       }
     });

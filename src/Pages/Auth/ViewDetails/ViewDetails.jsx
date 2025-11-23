@@ -23,7 +23,7 @@ const ViewDetails = () => {
                 setLoading(false);
             })
             .catch(err => {
-                console.log(err);
+                // console.log(err);
                 setLoading(false);
             });
     }, [user?.email]);
@@ -49,7 +49,7 @@ const ViewDetails = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
+                // console.log(data);
                 toast.success("Successfully booked!");
                 navigate("/my-bookings");
             })

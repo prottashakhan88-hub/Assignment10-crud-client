@@ -4,7 +4,7 @@ import { AuthContext } from '../../../Context/AuthContext';
 const MyBookings = () => {
      const {user} = use(AuthContext)
           const [vehicle, setVehicle] = useState({});
-          console.log(vehicle)
+          // console.log(vehicle)
       const [loading, setLoading] = useState(true)
 
        useEffect(() => {
@@ -12,7 +12,7 @@ const MyBookings = () => {
               fetch(`http://localhost:3000/my-bookings?email=${user?.email}`)
               .then(res => res.json())
               .then(data => {
-                console.log(data)
+                // console.log(data)
                  
                   setVehicle(data)
                   setLoading(false)

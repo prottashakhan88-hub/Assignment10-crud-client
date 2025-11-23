@@ -5,7 +5,7 @@ import { useLoaderData } from 'react-router';
 const UpdateVehicle = () => {
        const data = useLoaderData()
     const vehicle = data.result 
-    console.log(vehicle)
+    // console.log(vehicle)
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -29,11 +29,11 @@ const UpdateVehicle = () => {
       .then((res) => res.json())
       .then((data) => {
         toast.success("✅ Vehicle added successfully!");
-        console.log("Vehicle added:", data);
+        // console.log("Vehicle added:", data);
         e.target.reset();
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
         toast.error("❌ Failed to add vehicle!");
       });
   };
